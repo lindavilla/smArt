@@ -1,0 +1,33 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+.startPage {
+    min-height: 80vh;
+    width: 75%;
+    margin: 4rem auto;
+    background-color: rgba(244, 244, 244, 0.40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .startPage h1 {
+      font-family: fantasy;
+      font-size: 50px;
+      color:rgba(115, 50, 50,0.8);
+      
+  }
+
+  .startButton {
+    text-transform: uppercase;
+    color: rgb(115, 50, 50);
+    font-size: 20px;
+    padding: 10px 100px;
+    border: 2px solid white;
+    background-color: rgba(249,182,82, 0.6);
+    border-radius: 20px;
+  }
+  
