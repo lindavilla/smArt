@@ -1,3 +1,6 @@
+
+/*<----------------------Splash Screen -------------------------->*/
+
 body {
     background-image: url(../images/background.jpg);
     background-size: cover;
@@ -29,5 +32,10 @@ body {
     border: 2px solid white;
     background-color: rgba(249,182,82, 0.6);
     border-radius: 20px;
+    outline: none;
   }
+
+
+  /*<-------------------------Card Style --------------------------------->*/
+  
   
