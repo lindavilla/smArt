@@ -8,7 +8,6 @@ const startButton = document.getElementById("startButton");
 const restartButton = document.getElementById("restartButton");
 
 
-
 //console.log(document.getElementsByClassName("startButton"))
 
 function switchScreen(){
@@ -28,29 +27,42 @@ restartButton.addEventListener("click",switchScreen);
 
 
 
+//console.log(artWorks);
 
-//function showDom(html) {}
-
-/*
-function showSplashScreen() {
-    splashScreen = buildDom(`
-    <h1>smArt</h1>
-    <button class="startButton">start</button>
-    `);
-
-    splashScreen
-    .querySelector('.startButton')
-    .addEventListener('click',clickStart);
-}
-
-
-
-function showGameScreen(){
-
-}
-
-function clickStart(){
-    collapseSplashScreen();
-    showGameScreen();
+  function getPainting(numberofPaintingsToReturn){
+    let gamePageArray = [];
+    for (i= 0; i<numberofPaintingsToReturn; i++) {
+    let index = Math.floor(Math.random()* artWorks.length);
+    gamePageArray.push(artWorks[index]);
+    }
+    return gamePageArray;
   };
 
+
+
+function showPainting(gamePageArray){ 
+    
+}
+
+function getQuestion(gamePageArray){
+    let index = Math.floor(Math.random() * gamePageArray.length);
+    return gamePageArray[index].era;
+}
+
+
+function showQuestion(era){
+    document.getElementById("era").innerText = era;
+}
+
+
+
+
+let gamePageArray = getPainting(6)
+
+let era = getQuestion(gamePageArray)
+
+
+showQuestion(era)
+
+//console.log(getPainting(5))
+//console.log(getQuestion(gamePageArray))
