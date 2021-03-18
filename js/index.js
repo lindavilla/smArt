@@ -29,20 +29,28 @@ restartButton.addEventListener("click",switchScreen);
 
 //console.log(artWorks);
 
-  function getPainting(numberofPaintingsToReturn){
-    let gamePageArray = [];
-    for (i= 0; i<numberofPaintingsToReturn; i++) {
-    let index = Math.floor(Math.random()* artWorks.length);
-    gamePageArray.push(artWorks[index]);
+  function getPainting(artWorks){
+    // let gamePageArray = [];
+    console.log(artWorks);
+    for (i= 0; i < artWorks.length; i++) {
+        
+        showPainting(`painting${i +1}`)
+        // let index = Math.floor(Math.random()* artWorks.length);
+        // gamePageArray.push(artWorks[index]);
     }
-    return gamePageArray;
+    // return gamePageArray;
   };
 
-
-
-function showPainting(gamePageArray){ 
-    
+function showPainting(id){ 
+    console.log(id);
+    let newPainting = document.getElementById(id);
+    console.log(newPainting);
+    newPainting.setAttribute("src","/images/background.jpg")
 }
+
+/*
+for each square, access position of the array randomized, and paint it, and then show painting
+*/
 
 function getQuestion(gamePageArray){
     let index = Math.floor(Math.random() * gamePageArray.length);
@@ -57,12 +65,13 @@ function showQuestion(era){
 
 
 
-let gamePageArray = getPainting(6)
+getPainting(artWorks)
 
 let era = getQuestion(gamePageArray)
 
 
-showQuestion(era)
+showQuestion(artWorks)
+showPainting()
 
 //console.log(getPainting(5))
 //console.log(getQuestion(gamePageArray))
