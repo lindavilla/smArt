@@ -6,6 +6,8 @@ document.getElementsByClassName("gamePage")[0].style.display = "flex";
 const startPage = document.getElementById("startPage")[0];   
 const startButton = document.getElementById("startButton");
 const restartButton = document.getElementById("restartButton");
+const image = document.getElementById("painting" + [i]);
+
 
 
 //console.log(document.getElementsByClassName("startButton"))
@@ -29,28 +31,31 @@ restartButton.addEventListener("click",switchScreen);
 
 //console.log(artWorks);
 
-  function getPainting(artWorks){
-    // let gamePageArray = [];
-    console.log(artWorks);
-    for (i= 0; i < artWorks.length; i++) {
+/* Takes an array of paintings in parameter and draws a random list 
+of "number" out of this array */
+  function getPaintings(artWorks, number){
+    let gamePageArray = [];
+
+    for (i= 0; i < number; i++) {
+        let index = Math.floor(Math.random()* artWorks.length);
+        gamePageArray.push(artWorks[index]);
+        artWorks.splice(index, 1);
         
-        showPainting(`painting${i +1}`)
-        // let index = Math.floor(Math.random()* artWorks.length);
-        // gamePageArray.push(artWorks[index]);
     }
-    // return gamePageArray;
+
+    return gamePageArray;
   };
 
-function showPainting(id){ 
-    console.log(id);
-    let newPainting = document.getElementById(id);
-    console.log(newPainting);
-    newPainting.setAttribute("src","/images/background.jpg")
+
+function showPaintings(gamePageArray){ 
+    // Go through the list of paintings and for each, call the show function on the correct div
+    for(let index = 0; index < gamePageArray.length; index++)
+    {
+       document.getElementById("painting" + index).setAttribute("src", "../images/"+ gamePageArray[index].image)
+        // let newPainting = document.getElementById(id);
+    }   
 }
 
-/*
-for each square, access position of the array randomized, and paint it, and then show painting
-*/
 
 function getQuestion(gamePageArray){
     let index = Math.floor(Math.random() * gamePageArray.length);
@@ -63,15 +68,20 @@ function showQuestion(era){
 }
 
 
+function switchSelection(id) {
+    let selectedImages = [];
 
 
-getPainting(artWorks)
+}
 
-let era = getQuestion(gamePageArray)
+// We draw a list of 6 random paintings
+let gamePageArray = getPaintings(artWorks, 6);
 
+// We extract an era randomly from one of those 6 paintings
+let era = getQuestion(gamePageArray);
 
-showQuestion(artWorks)
-showPainting()
+// We display the era on screen
+showQuestion(era);
 
-//console.log(getPainting(5))
-//console.log(getQuestion(gamePageArray))
+// We display the 6 paintings on screen
+showPaintings(gamePageArray);
