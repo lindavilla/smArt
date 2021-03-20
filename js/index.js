@@ -6,7 +6,17 @@ document.getElementsByClassName("gamePage")[0].style.display = "flex";
 const startPage = document.getElementById("startPage")[0];   
 const startButton = document.getElementById("startButton");
 const restartButton = document.getElementById("restartButton");
-const image = document.getElementById("painting" + [i]);
+
+
+
+startButton.addEventListener("click",switchScreen);
+restartButton.addEventListener("click",switchScreen);
+
+
+
+for(let index = 0; index < 6; index++){
+    document.getElementById("painting" + index).addEventListener("click",switchSelection);
+} 
 
 
 
@@ -24,8 +34,6 @@ function switchScreen(){
 }
 
 
-startButton.addEventListener("click",switchScreen);
-restartButton.addEventListener("click",switchScreen);
 
 
 
@@ -54,24 +62,30 @@ function showPaintings(gamePageArray){
        document.getElementById("painting" + index).setAttribute("src", "../images/"+ gamePageArray[index].image)
         // let newPainting = document.getElementById(id);
     }   
-}
+};
 
 
 function getQuestion(gamePageArray){
     let index = Math.floor(Math.random() * gamePageArray.length);
     return gamePageArray[index].era;
-}
+};
 
 
 function showQuestion(era){
     document.getElementById("era").innerText = era;
+};
+
+
+function switchSelection() {
+    //get the element that is being called 
+    //check div of element and see if it has the class selected
+    //if it does, remove the class selected
+    //if not, add the class selected
+    console.log("image selected");
 }
 
-
-function switchSelection(id) {
-    let selectedImages = [];
-
-
+function showResult () {
+    
 }
 
 // We draw a list of 6 random paintings
