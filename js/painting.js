@@ -6,4 +6,21 @@ class Painting {
         this.era = era;
         this.image = image; 
     }
+
+    getImage(){
+        return "../images/"+this.image;
+    }
+
+    getEra(){
+        return this.era;
+    }
+
+    isEra(era){
+        if(this.era == era) return true;
+        else return false;
+    }
+
+    getTitle(){
+        return this.title;
+    }
 }
