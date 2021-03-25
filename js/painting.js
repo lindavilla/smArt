@@ -8,8 +8,9 @@ class Painting {
     }
 
     getImage(){
-        return "https://raw.githubusercontent.com/lindavilla/smArt/MVP/images/"+this.image;
-        //return "../images/"+this.image;
+        if(location.host == "127.0.0.1:5500") return "../images/"+this.image;
+        else return "https://raw.githubusercontent.com/lindavilla/smArt/MVP/images/"+this.image;
+
     }
 
     getEra(){
