@@ -1,0 +1,201 @@
+
+/*<----------------------Splash Screen -------------------------->*/
+
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    font-family: fantasy;
+    overflow: hidden;
+}
+
+.startPage {
+    min-height: 80vh;
+    width: 75%;
+    margin: 4rem auto;
+    background-color: rgba(244, 244, 244, 0.40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .startPage h1 {
+      font-family: fantasy;
+      font-size: 75px;
+      color:rgba(134, 20, 20, 0.8);
+      text-shadow: -1px 0 white, 0 1px black, 1px 0 white, 0 -1px black;
+
+      
+  }
+
+  .startButton {
+    text-transform: uppercase;
+    color: rgb(115, 50, 50);
+    font-size: 20px;
+    padding: 10px 100px;
+    border: 2px solid white;
+    background-color: rgba(249,182,82, 0.6);
+    border-radius: 20px;
+    outline: none;
+  }
+
+  /*<-------------------------Game Page --------------------------------->*/
+  
+#era{
+  color: blue;
+}
+
+.gamePageNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+
+}
+
+.leftSideNav {
+margin-left: 20px;
+}
+
+.rightSideNav{
+margin-right: 20px;
+flex-direction: column;
+}
+
+.points {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.gamePage {
+  width: 90%;
+  margin: 4rem;
+  margin-top: 20px;
+  background-color: rgba(244, 244, 244, 0.40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.rightSideNav {
+  display: flex;
+  align-items: center;
+}
+
+.cardsRow{
+  height: 280px;
+  display: flex;
+  align-items: baseline;
+}
+
+.card {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  width: 180px;
+  margin: 7px;
+  margin-top: 10px;
+  border: 5px solid rgb(71, 71, 71);
+  background-color: white;
+}
+
+.card span{
+  display: block;
+  height: 100px;
+} 
+
+.selectedImage {
+  border: 5px solid yellow;
+} 
+
+.wrongAnswer {
+  border: 5px solid rgb(168, 38, 28);
+} 
+
+.correctAnswer {
+  border: 5px solid rgb(0, 237, 245);
+} 
+
+.missingAnswer {
+  border: 5px solid rgb(51, 103, 214);
+} 
+
+
+
+/* <----------------Images ---------------->*/
+
+.card img {
+width: 100%;
+height: 100%;
+}
+
+/*<-----------------Game Buttons ------------->*/
+
+.reshuffleButton {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(115, 50, 50);
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: rgba(249,182,82, 0.6);
+  outline: none;
+}
+
+.confirmButton {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(115, 50, 50);
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: rgba(249,182,82, 0.6);
+  outline: none;
+}
+  
+  .restartButton {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(115, 50, 50);
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: rgba(249,182,82, 0.6);
+  outline: none;
+  }
+
+  .mainButton{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(115, 50, 50);
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: rgba(249,182,82, 0.6);
+    outline: none;
+  }
+
+  .nextButton {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(115, 50, 50);
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: rgba(249,182,82, 0.6);
+    outline: none;
+  }
+
+  .gameButtons{
+    margin-top: 20px;
+    
+  }
+
+  
