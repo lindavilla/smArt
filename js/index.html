@@ -9,12 +9,27 @@
   <body>
     <div class="startPage" id="startPage">
       <h1>smArt</h1>
-      <button class="startButton" id="startButton">Start</button>
+      <button class="startButton" id="startButton">Begin</button>
     </div>
-    <div class="gamePage" id="gamePage" style="display:none">
+    
+    <div class="gamePage" id="gamePage" style = "display: none">
+      <div class="gamePageNav">
+      <div class="gamePageHeader">
       <h2>Find the artwork to the following era:</h2>
+      <h2 id="era"></h2>
+      <div>
       <span>Your points: </span><span id="points">0</span>
-      <span id="era"></span>
+      </div>
+    </div>
+      <br>
+      <div class="gameButtons">
+        <button class="confirmButton" id="confirmButton">Confirm</button>
+        <button class="nextButton" id="nextButton" style="display:none">Next round</button>
+        <button class="restartButton" id="restartButton">Restart</button>
+        <button class="reshuffleButton" id="reshuffleButton" >Reshuffle</button>
+        <button class="mainButton" id="mainButton">Back to Main Menu</button>
+    </div>
+  </div>
       <div class = "card1">
       <div class="card" id="card0">
         <img id="painting0"/>
@@ -32,6 +47,7 @@
         <img id="painting3"/>
         <span id="paintingTitle3"></span>
       </div>
+      <br>
       <div class="card" id="card4">
         <img id="painting4"/>
         <span id="paintingTitle4"></span>
@@ -40,18 +56,19 @@
         <img id="painting5"/>
         <span id="paintingTitle5"></span>
       </div>
+        <div class="card" id="card6">
+          <img id="painting6"/>
+          <span id="paintingTitle6"></span>
+      </div>
+      <div class="card" id="card7">
+        <img id="painting7"/>
+        <span id="paintingTitle7"></span>
+    </div>
     </div>
   </div>
-      <button class="reshuffleButton" id="reshuffleButton">Reshuffle</button>
-      <button class="confirmButton" id="confirmButton">Confirm</button>
-      <button class="nextButton" id="nextButton" style="display:none">Next round</button>
-      <button class="restartButton" id="restartButton">Restart</button>
-      <button class="mainButton" id="mainButton">Back to Main Menu</button>
-
-    
-    <script type="text/javascript" src="./painting.js"></script>
-    <script type="text/javascript" src="./data.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="painting.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 
 

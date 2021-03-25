@@ -4,6 +4,8 @@
 body {
     background-image: url(../images/background.jpg);
     background-size: cover;
+    font-family: fantasy;
+    overflow: hidden;
 }
 
 .startPage {
@@ -34,19 +36,33 @@ body {
     border-radius: 20px;
     outline: none;
   }
-    
-  /*<-------------------------Card Style --------------------------------->*/
+
+  /*<-------------------------Game Page --------------------------------->*/
   
+.gamePage h2 {
+  padding: 0;
+  margin: 5px;
+  margin-top: 25px;
+}
+
+.gamePage span {
+  padding: 0;
+  margin: 5px;
+}
+
 .gamePage {
-  min-height: 80vh;
-  width: 85%;
-  margin: 4rem auto;
+  width: 90%;
+  margin: 4rem;
+  margin-top: 20px;
   background-color: rgba(244, 244, 244, 0.40);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 10px;
 }
+
+
 
 .card {
   display: inline-block;
@@ -54,21 +70,21 @@ body {
   height: 250px;
   width: 200px;
   margin: 7px;
+  margin-top: 0;
   border: 5px solid rgb(71, 71, 71);
   background-color: white;
-  cursor:grabbing;
 }
 
 .selectedImage {
-  border: 5px solid rgb(146, 146, 146);
+  border: 5px solid rgb(0, 237, 245);
 } 
 
 .wrongAnswer {
-  border: 5px solid rgb(245, 71, 59);
+  border: 5px solid rgb(168, 38, 28);
 } 
 
 .correctAnswer {
-  border: 5px solid rgb(43, 206, 116);
+  border: 5px solid rgb(69, 143, 0);
 } 
 
 .missingAnswer {
@@ -83,3 +99,75 @@ width: 100%;
 height: 100%;
 }
 
+/*<-----------------Game Buttons ------------->*/
+
+.reshuffleButton {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(115, 50, 50);
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: rgba(249,182,82, 0.6);
+  outline: none;
+}
+
+.confirmButton {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(115, 50, 50);
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: rgba(249,182,82, 0.6);
+  outline: none;
+}
+  
+  .restartButton {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(115, 50, 50);
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: rgba(249,182,82, 0.6);
+  outline: none;
+  }
+
+  .mainButton{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(115, 50, 50);
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: rgba(249,182,82, 0.6);
+    outline: none;
+  }
+
+  .nextButton {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(115, 50, 50);
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: rgba(249,182,82, 0.6);
+    outline: none;
+  }
+
+  .gameButtons {
+    float: right;
+    width: 30%;
+
+  }
+
+  .gamePageHeader {
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  

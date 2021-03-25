@@ -1,7 +1,8 @@
 // Temporary for the development of the game, to remove when the game is finished
-// document.getElementsByClassName("startPage")[0].style.display = "none";
-// document.getElementsByClassName("gamePage")[0].style.display = "flex";
+//document.getElementsByClassName("startPage")[0].style.display = "none";
+//document.getElementsByClassName("gamePage")[0].style.display = "flex";
 
+//switchScreen();
 
 // Items that are static for the page
 const START_PAGE = document.getElementById("startPage");
@@ -12,9 +13,13 @@ const RESTART_BUTTON = document.getElementById("restartButton");
 const RESHUFFLE_BUTTON = document.getElementById("reshuffleButton");
 const NEXT_BUTTON = document.getElementById("nextButton");
 const CONFIRM_BUTTON = document.getElementById("confirmButton");
-const CARDS_NUMBER = 6;
+const CARDS_NUMBER = 8;
 
-START_BUTTON.addEventListener("click", switchScreen);
+START_BUTTON.addEventListener("click", () => {
+    
+    switchScreen()
+    
+});
 MAIN_BUTTON.addEventListener("click", switchScreen);
 RESTART_BUTTON.addEventListener("click", resetGame);
 RESHUFFLE_BUTTON.addEventListener("click", reshuffle);
@@ -89,6 +94,8 @@ function resetRound(){
 
     // We display the CARDS_NUMBER paintings on screen
     showPaintings(gamePageArray);
+
+   
 }
 
 function reshuffle(){
@@ -102,13 +109,14 @@ function resetGame() {
 }
 
 function switchScreen(){
-    if (START_PAGE.style.display == "flex"){
+    if (START_PAGE.style.display == ""){
         START_PAGE.style.display = "none";
         GAME_PAGE.style.display = "flex";
+        
    }
    else {
         GAME_PAGE.style.display = "none";
-        START_PAGE.style.display = "flex";
+        START_PAGE.style.display = "";
    }
    resetGame();
 }
