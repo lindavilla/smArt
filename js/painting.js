@@ -8,7 +8,8 @@ class Painting {
     }
 
     getImage(){
-        return "../images/"+this.image;
+        return "https://raw.githubusercontent.com/lindavilla/smArt/MVP/images/"+this.image;
+        //return "../images/"+this.image;
     }
 
     getEra(){
