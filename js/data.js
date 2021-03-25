@@ -4,7 +4,7 @@ let artWorks = [
     new Painting("The Consecration of St Marcus c.1350", "Arnau Bassa", "1350", "Medieval", "MedievalCatalan1.jpg"),
     new Painting("Mona Lisa c.1503", "Leonardo da Vinci", "1503", "Renaissance", "RenaissanceItaly.jpg"),
     new Painting("The Creation of Man c.1683", "Luca Giordano", "1683", "Renaissance", "RenaissanceItaly2.jpg"),
-    new Painting("The Milkmaid c.1658", "Johannes Vermeer", "1658", "Baroque", "baroque.jpg"),
+    new Painting("The Milkmaid c.1658", "Johannes Vermeer", "1658", "Baroque", "Baroque.jpg"),
     new Painting("Girl with a Pearl Earring c.1665", "Johannes Vermeer", "1665", "Baroque", "Baroque1.jpg"),
     new Painting("The Blue Boy c.1770", "Thomas Gainsborough", "1770", "Rococo", "RococoEngland.jpg"),
     new Painting("The Swing c.1767", "Jean-Honoré Fragonard", "1767", "Rococo", "RococoFrance1.jpg"),
