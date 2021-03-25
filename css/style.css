@@ -21,8 +21,10 @@ body {
 
   .startPage h1 {
       font-family: fantasy;
-      font-size: 50px;
-      color:rgba(115, 50, 50,0.8);
+      font-size: 75px;
+      color:rgba(134, 20, 20, 0.8);
+      text-shadow: -1px 0 white, 0 1px black, 1px 0 white, 0 -1px black;
+
       
   }
 
@@ -39,15 +41,32 @@ body {
 
   /*<-------------------------Game Page --------------------------------->*/
   
-.gamePage h2 {
-  padding: 0;
-  margin: 5px;
-  margin-top: 25px;
+#era{
+  color: blue;
 }
 
-.gamePage span {
-  padding: 0;
-  margin: 5px;
+.gamePageNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+
+}
+
+.leftSideNav {
+margin-left: 20px;
+}
+
+.rightSideNav{
+margin-right: 20px;
+flex-direction: column;
+}
+
+.points {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
 }
 
 .gamePage {
@@ -62,21 +81,36 @@ body {
   padding-bottom: 10px;
 }
 
+.rightSideNav {
+  display: flex;
+  align-items: center;
+}
 
+.cardsRow{
+  height: 280px;
+  display: flex;
+  align-items: baseline;
+}
 
 .card {
   display: inline-block;
   align-items: center;
-  height: 250px;
-  width: 200px;
+  justify-content: space-between;
+  height: 200px;
+  width: 180px;
   margin: 7px;
-  margin-top: 0;
+  margin-top: 10px;
   border: 5px solid rgb(71, 71, 71);
   background-color: white;
 }
 
+.card span{
+  display: block;
+  height: 100px;
+} 
+
 .selectedImage {
-  border: 5px solid rgb(0, 237, 245);
+  border: 5px solid yellow;
 } 
 
 .wrongAnswer {
@@ -84,12 +118,13 @@ body {
 } 
 
 .correctAnswer {
-  border: 5px solid rgb(69, 143, 0);
+  border: 5px solid rgb(0, 237, 245);
 } 
 
 .missingAnswer {
-  border: 5px solid rgb(73, 111, 194);
+  border: 5px solid rgb(51, 103, 214);
 } 
+
 
 
 /* <----------------Images ---------------->*/
@@ -158,16 +193,9 @@ height: 100%;
     outline: none;
   }
 
-  .gameButtons {
-    float: right;
-    width: 30%;
-
+  .gameButtons{
+    margin-top: 20px;
+    
   }
 
-  .gamePageHeader {
-    float: left;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-  }
   

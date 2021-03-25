@@ -4,71 +4,82 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="../css/style.css" />
-  <title>smArt</title>
+    <title>smArt</title>
   </head>
   <body>
     <div class="startPage" id="startPage">
       <h1>smArt</h1>
       <button class="startButton" id="startButton">Begin</button>
     </div>
-    
-    <div class="gamePage" id="gamePage" style = "display: none">
+
+    <div class="gamePage" id="gamePage" style="display: none">
       <div class="gamePageNav">
-      <div class="gamePageHeader">
-      <h2>Find the artwork to the following era:</h2>
-      <h2 id="era"></h2>
-      <div>
-      <span>Your points: </span><span id="points">0</span>
+        <div class="leftSideNav">
+          <h2>Find the artwork to the following era:</h2>
+          <h2 id="era"></h2>
+        </div>
+        <div class="rightSideNav">
+          <div class="gameButtons">
+            <button class="restartButton" id="restartButton">Restart</button>
+            <button class="mainButton" id="mainButton">
+              Back to Main Menu
+            </button>
+          </div>
+          <br />
+          <div class="points">
+            <span id="points">0</span><span>Your points: </span>
+          </div>
+        </div>
       </div>
-    </div>
-      <br>
+      <div class="cards">
+        <div class="cardsRow">
+          <div class="card" id="card0">
+            <img id="painting0" />
+            <span id="paintingTitle0"></span>
+          </div>
+          <div class="card" id="card1">
+            <img id="painting1" />
+            <span id="paintingTitle1"></span>
+          </div>
+          <div class="card" id="card2">
+            <img id="painting2" />
+            <span id="paintingTitle2"></span>
+          </div>
+          <div class="card" id="card3">
+            <img id="painting3" />
+            <span id="paintingTitle3"></span>
+          </div>
+        </div>
+        <br />
+        <div class="cardsRow">
+          <div class="card" id="card4">
+            <img id="painting4" />
+            <span id="paintingTitle4"></span>
+          </div>
+          <div class="card" id="card5">
+            <img id="painting5" />
+            <span id="paintingTitle5"></span>
+          </div>
+          <div class="card" id="card6">
+            <img id="painting6" />
+            <span id="paintingTitle6"></span>
+          </div>
+          <div class="card" id="card7">
+            <img id="painting7" />
+            <span id="paintingTitle7"></span>
+          </div>
+        </div>
+      </div>
       <div class="gameButtons">
+        <button class="reshuffleButton" id="reshuffleButton">Reshuffle</button>
         <button class="confirmButton" id="confirmButton">Confirm</button>
-        <button class="nextButton" id="nextButton" style="display:none">Next round</button>
-        <button class="restartButton" id="restartButton">Restart</button>
-        <button class="reshuffleButton" id="reshuffleButton" >Reshuffle</button>
-        <button class="mainButton" id="mainButton">Back to Main Menu</button>
+        <button class="nextButton" id="nextButton" style="display: none">
+          Next round
+        </button>
+      </div>
     </div>
-  </div>
-      <div class = "card1">
-      <div class="card" id="card0">
-        <img id="painting0"/>
-        <span id="paintingTitle0"></span>
-      </div>
-      <div class="card" id="card1">
-        <img id="painting1"/>
-        <span id="paintingTitle1"></span>
-      </div>
-      <div class="card" id="card2">
-        <img id="painting2"/>
-        <span id="paintingTitle2"></span>
-      </div>
-      <div class="card" id="card3">
-        <img id="painting3"/>
-        <span id="paintingTitle3"></span>
-      </div>
-      <br>
-      <div class="card" id="card4">
-        <img id="painting4"/>
-        <span id="paintingTitle4"></span>
-      </div>
-      <div class="card" id="card5">
-        <img id="painting5"/>
-        <span id="paintingTitle5"></span>
-      </div>
-        <div class="card" id="card6">
-          <img id="painting6"/>
-          <span id="paintingTitle6"></span>
-      </div>
-      <div class="card" id="card7">
-        <img id="painting7"/>
-        <span id="paintingTitle7"></span>
-    </div>
-    </div>
-  </div>
     <script type="text/javascript" src="painting.js"></script>
     <script type="text/javascript" src="data.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
-
-
+</html>
