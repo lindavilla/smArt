@@ -28,8 +28,8 @@ let artWorks = [
     new Painting("Two Beauties with Bamboo c.1795", "Utamaro", "1795", "Ukiyo-e", "ukiyo-e1.jpg"),
     new Painting("Emperor Jahangir visiting the ascetic Jadrup", "Govardhan", "1616", "Mughal", "Mughal.jpg"),
     new Painting("Babur Receives a Courtier by Farrukh Beg", "N/A", "1580", "Mughal", "Mughal1.jpg"),
-    new Painting("Bharat Mata c.1905", "Abanindranath Tagore", "1905", "Bengal School of Art", "bengalArt.jpg"),
-    new Painting("Asoka's Queen c.1910", "Abanindranath Tagore", "1910", "Bengal School of Art", "bengalArt1.jpg"),
+    new Painting("Bharat Mata c.1905", "Abanindranath Tagore", "1905", "Bengal School of Art", "bengalSchool.jpg"),
+    new Painting("Asoka's Queen c.1910", "Abanindranath Tagore", "1910", "Bengal School of Art", "bengalSchool1.jpg"),
     new Painting("Lascaux Drawings c.30,000BC", "", "", "Stone Age", "stoneAge.jpg"),
     new Painting("Lascaux Drawings c.30,000BC", "", "", "Stone Age", "stoneAge1.jpg"),
 
