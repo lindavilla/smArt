@@ -22,9 +22,6 @@ HTML, DOM, Vanilla JS
   * Title
   * Name input
   * Start button
-  * Config
-    * Language: English
-    * Music: On/off
 * __Game Screen__
   * DOM
  * Retry button 
@@ -32,9 +29,7 @@ HTML, DOM, Vanilla JS
 * Create interface
 * * *
 ## BACK LOG
-### Music
-* Add background music to game
-* Add music on and off button to setup
+
 ### Levels
 * Check phase and increase level
 
